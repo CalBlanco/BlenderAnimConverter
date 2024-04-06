@@ -18,4 +18,4 @@ for img in imgs:
     leaf = os.path.basename(img)
     frame = leaf.split("-")[1].split(".")[0]
     new_name = leaf.split("-")[0] +"-"+frame_translate[frame]
-    os.rename(img,os.path.dirname(img)+new_name+".png")
+    os.rename(img,os.path.dirname(img)+"/"+new_name+".png")
